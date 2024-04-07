@@ -1,0 +1,25 @@
+{
+  "name": "volai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:fastify": "pnpm build && node dist/pocs/fastify.js",
+    "start:volai": "pnpm build && node dist/pocs/volai.js",
+    "fire:fastify": "autocannon -c 100 -d 10 http://localhost:3000",
+    "fire:volai": "autocannon -c 100 -d 10 http://localhost:3000",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.26.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.5",
+    "autocannon": "^7.15.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4"
+  }
+}
