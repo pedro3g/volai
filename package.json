@@ -14,7 +14,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "fastify": "^4.26.2"
+    "@types/formidable": "^3.4.5",
+    "fastify": "^4.26.2",
+    "formidable": "^3.5.1"
   },
   "devDependencies": {
     "@types/node": "^20.12.5",
